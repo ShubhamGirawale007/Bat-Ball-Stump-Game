@@ -13,11 +13,13 @@ border: 10px;
 padding-top:10px ;
   }
 .main-container{
-  height: 150px;
-  width: 600px;
-  gap: 10px;
-  margin-left: 450px;
-  
+  width: fit-content;
+  margin: auto;      
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
 
 
 }
@@ -26,11 +28,22 @@ padding-top:10px ;
   border-radius: 10px;
   height: 80px;
   width: 80px;
+  
   padding: 5px;
-  margin: 30px;
+  margin: 15px;
    box-shadow: 4px 4px 15px rgb(232, 188, 11);
   transition: box-shadow 0.3s ease;
+               /* center image inside */
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
+.button img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* keep original aspect ratio */
+}
+
 .button:hover{
   background-color: rgb(0, 0, 0);
   border:2px solid white;
@@ -40,4 +53,35 @@ padding-top:10px ;
 }
 h3{
   color:white;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+@media(max-width:768px){
+  h1{
+    font-size:1.5rem;
+    padding: 5px;
+  }
+  .main-container{
+    width: 90%;
+    height:auto;
+  }
+  
+  .button {
+    width: 25vw;
+    max-width: 70px;
+    min-width: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    width: 30vw;
+    max-width: 60px;
+  }
 }
