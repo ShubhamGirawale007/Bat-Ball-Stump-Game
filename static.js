@@ -24,10 +24,6 @@
    localStorage.clear();
    resetScore(null);document.getElementById('score').innerText = score.displayScore();
    })
-
-    
-
-
   let resultMsg; 
     let scoreStr = localStorage.getItem('score');
     let score;
