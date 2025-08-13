@@ -1,4 +1,4 @@
-#[🏏 Bat Ball Stump Game](https://panther-cricket-game.vercel.app/)
+# [🏏 Bat Ball Stump Game](https://panther-cricket-game.vercel.app/)
 
 An interactive and fun cricket-themed mini-game built using **HTML**, **CSS**, and **JavaScript**.  
 Test your luck against the computer in a classic **Bat, Ball, Stump** challenge! 🎯
