@@ -1,5 +1,4 @@
 
-
     let batchoice=document.getElementsByClassName('button')[0];
     batchoice.addEventListener('click',() => { 
     computerChoice= generatecomputerChoice();
@@ -25,6 +24,9 @@
    localStorage.clear();
    resetScore(null);document.getElementById('score').innerText = score.displayScore();
    })
+
+    
+
 
   let resultMsg; 
     let scoreStr = localStorage.getItem('score');
